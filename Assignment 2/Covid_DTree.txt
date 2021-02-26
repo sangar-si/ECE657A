@@ -1,0 +1,22 @@
+|--- Age_Group <= 6.50
+|   |--- Case_Aq_MISSING INFORMATION <= 0.50
+|   |   |--- Age_Group <= 5.50
+|   |   |   |--- class: 1
+|   |   |--- Age_Group >  5.50
+|   |   |   |--- class: 1
+|   |--- Case_Aq_MISSING INFORMATION >  0.50
+|   |   |--- City_Toronto <= 0.50
+|   |   |   |--- class: 0
+|   |   |--- City_Toronto >  0.50
+|   |   |   |--- class: 0
+|--- Age_Group >  6.50
+|   |--- Outbreak_Related <= 0.50
+|   |   |--- Age_Group <= 7.50
+|   |   |   |--- class: -1
+|   |   |--- Age_Group >  7.50
+|   |   |   |--- class: -1
+|   |--- Outbreak_Related >  0.50
+|   |   |--- City_Otherwise <= 0.50
+|   |   |   |--- class: -1
+|   |   |--- City_Otherwise >  0.50
+|   |   |   |--- class: -1
